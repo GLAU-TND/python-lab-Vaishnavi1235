@@ -3,14 +3,14 @@ Program 1:
 class MyException(Exception):
 	def _init_(self,v):
                		 self.v=v
-              	def _str_(self):
+        def _str_(self):
                    	return str(self.v)
 	def xyz(a,b):
-                        	c= a+b
-                               	if c < 150:
-                           		raise MyException('custom exception occurred')
-                                         	else :
-                                              		return c
+                        c= a+b
+                        if c < 150:
+                      		raise MyException('custom exception occurred')
+                      	else :
+                        	return c
 a=int(input())
 b=int(input())
 print(xyz(a,b))
@@ -25,9 +25,9 @@ try:
 	n=int(input())
  	b=int(input())
  	a=input()
-            	c=n+b
-            	l=a+b
-            	n.append(3)
+        c=n+b
+        l=a+b
+        n.append(3)
 except ValueError:
             raise ValueError('value error occurred')
 except TypeError:
@@ -43,7 +43,7 @@ except:
 Program 3:
 
 while (1):
-          	try:
+	try:
  		n=int(input())
-         	except:
+        except:
        		print('error occurred')
